@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="black">
+
+    <!-- FLOATING ACTION BUTTON -->
+    <div class="fixed-action-btn hide-on-large-only">
+        <a class="btn-floating btn-large red toolbar">
+          <i class="large material-icons grey darken-4">accessibility</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating black modal-trigger" href="#modal1"><i class="material-icons">contact_mail</i></a></li>
+          <li><a class="btn-floating grey darken-4" href="index.html"><i class="material-icons">home</i></a></li>
+          <li><a class="btn-floating black" href="about.html"><i class="material-icons">group</i></a></li>
+        </ul>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal modal-fixed-footer " >
+        <div class="modal-content" >
+          <h5 class="black-text">Contact Us!</h5>
+          <hr>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                  <span class="helper-text" data-error="wrong" data-success="right">Email Verification</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+                  
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Comments</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <div class="navbar-fixed">
+        <nav class="navimg">
+            <div class="nav-wrapper container">
+            <a href="#" class="brand-logo left-align" style="font-family: 'Raleway';">
+                <strong> <span class="blue-text">E</span>lectroni<span class="blue-text">c</span>s</strong>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#modal1" class="modal-trigger">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Introduction -->
+    <div class="container">
+        <br>
+        <hr>
+        <h4 class="white-text">
+            About the Author
+        </h4>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col s12 m5 l4">
+                <img src="image/1x1.jpg" alt="" class="responsive-img circle">
+            </div>
+            <div class="col s12 m7 l8">
+              <ul class="responsive-table">
+                <li>
+                  <h3 class="white-text"> Adrian S. Lunjas</h3>
+                </li>
+                <li>
+                    <h6 class="white-text iconsz"><i class="material-icons iconsz">location_on</i> Philippines</h6>
+                </li>
+                <li>
+                  <h6 class="white-text iconsz"><i class="material-icons iconsz">contact_phone</i> +639307******</h6>
+                </li>
+                <li>
+                  <h6 class="white-text iconsz"><i class="material-icons iconsz">contact_mail</i> adrianlunjas11@gmail.com</h6>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <h4 class="white-text grey darken-4 introtitle">
+                Educational Background
+            </h4>
+            <hr>
+            <h5 class="white-text">
+                <a onclick="M.toast({html: 'I learned Python'})" class="white-text">
+                <strong>College (Present)</strong>
+                </a>
+            </h5>
+            <h6 class="white-text">
+                <p>Pamantasan ng Cabuyao</p>
+                <p>- Bachelor of Science in Electronics Communication Engineer</p>
+            </h6>
+            <br>
+            <h5 class="white-text">
+                <a onclick="M.toast({html: 'I learned Java'})" class="white-text">
+                <strong>Senior Highschool (2021 Graduate)</strong>
+                </a>
+            </h5>
+            <h6 class="white-text">
+                <p>Pamantasan ng Cabuyao SHS</p>
+                <p>- Enhance Science, Technology, Engineering, and Mathematics</p>
+            </h6>
+            <br>
+            <h5 class="white-text">
+                <a onclick="M.toast({html: 'I learned Basic HTML'})" class="white-text">
+                <strong>Junior Highschool (2019 Graduate)</strong>
+                </a>
+            </h5>
+            <h6 class="white-text">
+                <p>Maranatha Christian Academy Cabuyao Chapter</p>
+            </h6>
+            <br>
+            <h5 class="white-text">
+                <strong>Primary School (2015 Graduate)</strong>
+            </h5>
+            <h6 class="white-text">
+                <p>Banay-Banay Elementary School</p>
+            </h6>
+        </div>
+        <!-- Programming Background -->
+        <h4 class="white-text grey darken-4 introtitle">
+            Programming Background
+        </h4>
+        <hr>
+        <!-- Tesda -->
+        <div class="row">
+            <div class="col s5 m5 l5">
+                <h5 class="white-text">
+                    <strong>Tesda (Current)</strong>
+                </h5>
+                <h6 class="white-text">
+                    <p>Telecall Creative Web Design</p>
+                </h6>
+            </div>
+            <div class="col s2 m2 l2 ">
+                <img src="image/html5.png" class="responsive-img">
+            </div>
+            <div class="col s2 m2 l2 ">
+                <img src="image/CSS.png" class="responsive-img">
+            </div>
+            <div class="col s2 m2 l2 ">
+                <img src="image/materialize.png" class="responsive-img">
+            </div>
+        </div>
+        <hr>
+        <!-- College -->
+        <div class="row">
+            <div class="col s5 m5 l5">
+                <h5 class="white-text">
+                    <strong>College (Current)</strong>
+                </h5>
+                <h6 class="white-text">
+                    <p>COE 103 Computer Fundamentals and Programming 1</p>
+                    <p>COE 106 Computer Fundamentals and Programming 2</p>
+                </h6>
+            </div>
+            <div class="col s2 m2 l2 ">
+                <img src="image/python.png" class="responsive-img">
+            </div>
+        </div>
+        <hr>
+        <!-- Senior Highschool -->
+        <div class="row">
+            <div class="col s5 m5 l5">
+                <h5 class="white-text">
+                    <strong>Senior Highschool (Graduated)</strong>
+                </h5>
+                <h6 class="white-text">
+                    <p>Computer Programming 1</p>
+                    <p>Computer Programming 2</p>
+                </h6>
+            </div>
+            <div class="col s2 m2 l2 ">
+                <img src="image/java.png" class="responsive-img">
+            </div>
+        </div>
+        <hr>
+        <!-- Junior Highschool -->
+        <div class="row">
+            <div class="col s5 m5 l5">
+                <h5 class="white-text">
+                    <strong>Junior Highschool (Graduated)</strong>
+                </h5>
+                <h6 class="white-text">
+                    <p>Basic Web Design</p>
+                </h6>
+            </div>
+            <div class="col s2 m2 l2 ">
+                <img src="image/html5.png" class="responsive-img">
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+        $('.fixed-action-btn').floatingActionButton({
+          hoverEnabled: false,
+          toolbarEnabled: false,
+          direction: 'left'
+        });
+        $('.sidenav').sidenav({
+          edge: 'right',
+          preventScrolling: false
+        });
+        $('.materialboxed').materialbox({
+          inDuration: 500
+        });
+        $('.slider').slider({
+          indicators: false,
+          height: 500,
+          interval: 1500
+        });
+        $('.slider.slider-smol').slider({
+          indicators: false,
+          interval: 1500,
+          height: 200
+        });
+        $('.slider.slider-medium').slider({
+          indicators: false,
+          interval: 1500,
+          height: 400
+        });
+        $('.carousel').carousel({
+          fullWidth: false,
+          dist: 100
+        });
+        $('.scrollspy').scrollSpy({
+        });
+        $('.modal').modal({
+        });
+        $('.chips').chips({
+        });
+      }); 
+    </script>
+</body>
+</html>

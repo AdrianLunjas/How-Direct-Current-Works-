@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Direct Current(DC) Works?</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Playfair+Display:ital@1&family=Roboto+Condensed&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body class="grey darken-4">
+
+    <!-- FLOATING ACTION BUTTON -->
+    <div class="fixed-action-btn hide-on-large-only">
+        <a class="btn-floating btn-large red toolbar">
+          <i class="large material-icons grey darken-4">accessibility</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating black modal-trigger" href="#modal1"><i class="material-icons">contact_mail</i></a></li>
+          <li><a class="btn-floating grey darken-4" href="index.html"><i class="material-icons">home</i></a></li>
+          <li><a class="btn-floating black" href="about.html"><i class="material-icons">group</i></a></li>
+        </ul>
+    </div>
+
+
+    <!-- Side Nav -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <div class="container center-align">
+            <br><br>
+            <hr>
+            <h5 class="white-text"><strong> Contents </strong></h5>
+            <hr>
+            <!-- Scroll Spy -->
+            <ul class="section table-of-contents">
+                <li><a href="#introduction" class="white-text">Introduction</a></li>
+                <li><a href="#DefinitionDC" class="white-text">Definition of DC</a></li>
+                <li><a href="#Uses" class="white-text">Uses of DC</a></li>
+                <li><a href="#Ohms" class="white-text">Ohm's Law</a></li>
+                <li><a href="#How" class="white-text">How it works?</a></li>
+            </ul>
+        </div>
+    </ul>
+    <!-- Modals -->
+    <div id="modal1" class="modal modal-fixed-footer " >
+        <div class="modal-content" >
+          <h5 class="black-text">Contact Us!</h5>
+          <hr>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                  <span class="helper-text" data-error="wrong" data-success="right">Email Verification</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+                  
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Comments</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <div class="navbar-fixed">
+        <nav class="navimg">
+            <div class="nav-wrapper container">
+            <a href="#" class="brand-logo left-align" style="font-family: 'Raleway';">
+                <strong> <span class="blue-text">E</span>lectroni<span class="blue-text">c</span>s</strong>
+            </a>
+            <ul class="right show-on-medium-and-down hide-on-large-only">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#modal1" class="modal-trigger">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- First section Introduction -->
+        <!-- Show on Large -->
+    <section class="section scrollspy noborder " id="introduction">
+        <ul class="backimg hide-on-med-and-down" >
+            <div class="container">
+                <h3 class="white-text">
+                    How Direct <span class="yellow-text">C</span>urrent (DC) <br> Works?
+                </h3>
+                <blockquote class="white-text">
+                    Try me in different sizes!
+                </blockquote>
+
+            </div>
+        </ul>
+        <!-- Show on Medium -->
+        <ul class="medbulb hide-on-large-only hide-on-small-only">
+            <div class="container">
+                <h3 class="white-text">
+                    How Direct <span class="yellow-text">C</span>urrent (DC) <br> Works?
+                </h3>
+                <blockquote class="white-text">
+                    Try me in different sizes!
+                </blockquote>
+
+            </div>
+        </ul>
+        <!-- Show on Small -->
+        <ul class="smolimg hide-on-med-and-up section">
+            <div class="container">
+                <h3 class="white-text righta">
+                    How Direct <span class="yellow-text">C</span>urrent (DC) <br> Works?
+                </h3>
+                <h6 class="righta white-text">
+                    Try me in different sizes!
+                </h6>
+            </div>
+        </ul>
+    </section>
+    <br>
+
+    
+    <section class="section black section scrollspy" id="DefinitionDC">
+        <!-- What is Direct Current -->
+        <hr>
+        <div class="container">
+            <h4 class="white-text afont">Definition of Direct <span class="yellow-text">C</span>urrent (DC)</h4>
+            <div class="card ">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="image/electricitycrop.jpg">
+                </div>
+                <div class="card-content grey lighten-2">
+                    <span class="card-title activator grey-text text-darken-4" style="font-family: Ubuntu;">What is Direct Current?<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://energyeducation.ca/encyclopedia/Direct_current" target="_blank">Reference Link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><strong> Direct Current (DC) </strong><i class="material-icons right">close</i></span>
+                    <p><br> Direct current (DC) is an electric current that is uni-directional, 
+                        so the flow of charge is always in the same direction. As opposed to 
+                        alternating current, the direction and amperage of direct currents do 
+                        not change. It is used in many household electronics and in all devices 
+                        that use batteries.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <br>
+    <section class="section black">
+        <!-- Uses of Direct Current -->
+        <hr>
+        <div class="container section scrollspy" id="Uses">
+            <h4 class="white-text afont">Uses of Direct <span class="yellow-text">C</span>urrent (DC)</h4>
+            <!-- Carousel -->
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="image/Caro1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="image/Caro2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="image/Caro3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="image/Caro4.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="image/Caro5.jpg"></a>
+            </div>
+               <br>
+        </div>
+        <hr> 
+    </section>
+    <br>
+    <!-- Ohm's Law -->
+    <section class="section black section scrollspy" id="Ohms">
+        <hr>
+        <div class="container">
+            <br>
+            <h4 class="white-text center-align ohms"> Ohm's Law</h4> 
+            <h6 class="white-text center-align"> the strength of a direct current is directly proportional to the potential 
+                difference and inversely proportional to the resistance of the circuit.</h6> <br>
+            <div class="row">
+                <div class="col s12 m4 l4 center-align yellow lighten-2">
+                    <br>   
+                    <i class="material-icons black-text" style="font-size: 15rem;">flash_on</i>
+                    <h4 class="ohms"><strong> Volts </strong></h4>
+                    <h6 class="pohms">
+                        Voltage is a measure of the potential difference between 
+                        two points as it is applied across a wire or an electric component
+                    </h6>
+                    <br> <br> <br>
+                </div>
+                <div class="col s12 m4 l4 center-align blue lighten-2">
+                    <br>
+                    <img src="image/current.png" class="responsive-img" width="200" height="200">
+                    <br><br>
+                    <h4 class="ohms"><strong> Current </strong></h4>
+                    <h6 class="pohms">
+                        Current is a flow of electrical charge carriers, usually 
+                        electrons or electron-deficient atoms
+                    </h6> <br> <br> <br> <br>
+
+                </div>
+                <div class="col s12 m4 l4 center-align grey lighten-2">
+                    <img src="image/resistance.png" class="responsive-img" width="245" height="250">
+                    <h4 class="ohms"><strong> Resistance </strong></h4>
+                    <h6 class="pohms">
+                        Resistance is a measure of the opposition to current flow in an electrical circuit
+                    </h6> <br> <br> <br> <br>
+                </div>
+            </div>
+            <br> <br>
+            <div class="row">
+                <div class="col s12 m6 l6 center-align ">
+                    <img src="image/Ohmslaw.png" alt="" class="responsive-img">
+                </div>
+                <div class="col s12 m6 l6">
+                    <br>
+                    <h1 class="white-text volts  center-align">V=IR</h1>
+                    <p class="white-text volts center-align"> volts = current x resistance</p>
+
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </section>
+    <br>
+    <!-- How it Works? -->
+    <section class="section black section scrollspy" id="How">
+        <hr>
+        <div class="container">
+            <h4 class="white-text afont">How light bulb works in Direct <span class="yellow-text">C</span>urrent (DC)</h4>
+            <!-- Slider on large-->
+            <ul class="hide-on-med-and-down">
+                <div class="slider">
+                    <ul class="slides">
+                    <li>
+                        <img class="responsive-img" src="image/slide1.jpg" > 
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="image/slide2.jpg" > 
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="image/slide3.jpg" > 
+                    </li>
+                    </ul>
+                </div>
+            </ul>
+            <!-- Show on Medium -->
+            <ul class="hide-on-large-only hide-on-small-only">
+                <div class="slider slider-medium">
+                    <ul class="slides">
+                    <li>
+                        <img class="responsive-img" src="image/slide1.jpg" > 
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="image/slide2.jpg" > 
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="image/slide3.jpg" > 
+                    </li>
+                    </ul>
+                </div>
+            </ul>
+            <!-- Show on Small -->
+            <ul class="hide-on-med-and-up">
+                <div class="slider slider-smol">
+                    <ul class="slides">
+                    <li>
+                        <img class="responsive-img" src="image/slide1.jpg" > 
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="image/slide2.jpg" > 
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="image/slide3.jpg" > 
+                    </li>
+                    </ul>
+                </div>
+            </ul>
+            <!-- Video -->
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/w82aSjLuD_8" 
+                title="Voltage Explained - What is Voltage? Basic electricity  potential difference" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </section>
+    <br>
+    
+    <!-- Footer -->
+    <footer class="page-footer black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text"><strong> <span class="blue-text">E</span>lectroni<span class="blue-text">c</span>s</strong></h5>
+              <p class="grey-text text-lighten-4">Do you like our Web Design? Contact Us!</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contact Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://twitter.com/?lang=en" target="_blank">Twitter</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          </div>
+        </div>
+      </footer>
+
+
+   <!-- SCRIPTS -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+        $('.fixed-action-btn').floatingActionButton({
+          hoverEnabled: false,
+          toolbarEnabled: false,
+          direction: 'left'
+        });
+        $('.sidenav').sidenav({
+          edge: 'right',
+          preventScrolling: false
+        });
+        $('.materialboxed').materialbox({
+          inDuration: 500
+        });
+        $('.slider').slider({
+          indicators: false,
+          height: 500,
+          interval: 1500
+        });
+        $('.slider.slider-smol').slider({
+          indicators: false,
+          interval: 1500,
+          height: 250
+        });
+        $('.slider.slider-medium').slider({
+          indicators: false,
+          interval: 1500,
+          height: 400
+        });
+        $('.carousel').carousel({
+          fullWidth: false,
+          dist: 100
+        });
+        $('.scrollspy').scrollSpy({
+        });
+        $('.modal').modal({
+        });
+        $('.chips').chips({
+        });
+      }); 
+    </script>
+</body>
+</html>

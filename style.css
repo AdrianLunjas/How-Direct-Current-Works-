@@ -1,0 +1,80 @@
+.backimg{
+    background-color: black;
+    background-image: url(image/bulb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 350px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.navimg{
+    background-image: url(image/bulb.jpg);
+    background-repeat: no-repeat;
+}
+.sectionbg{
+    background-image: url(image/bulb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.smolimg{
+    background-color: black;
+    background-image: url(image/smolbulb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 500px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.medbulb{
+    background-color: black;
+    background-image: url(image/medbulb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 400px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.righta{
+    text-align: right;
+}
+
+h3{
+    font-family: 'Raleway';
+}
+
+.afont{
+    font-family: 'Raleway' ;
+}
+.ohms{
+    font-family: 'Oswald', sans-serif;
+}
+.pohms{
+    font-family: 'Rubik', sans-serif;
+}
+.volts{
+    font-family: 'Playfair Display', serif;
+}
+.noborder{
+    padding-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+}
+.iconsz{
+    font-size: 20px;
+}
+.introtitle{
+    background-color: rgb(39, 38, 38);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
